@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Task Manager</h1>
+
+    <div class="adder">
+        <div><label for="t">Task : </label><input type="text" name="t" /></div>
+        <div>   
+            <label for="d">Deadline :</label>
+            <input type="date" name="d" />
+            <input type="time" name="ti" />
+        </div>
+        <button onclick="Add()">ADD</button>
+    </div>
+
+    <div class="container">
+      <div class="task" data-task-id="0">
+      <li>
+        <span id="X">Task 1</span>
+        <span>Deadline : 12/08/22
+        12:00</span>
+        <img src="remove.svg" alt="Remove"name="done" data-task-id="0" onclick="Remove(event)" />
+      </li>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Berkshire+Swash&family=Caprasimo&family=Lato&family=Lobster&family=Rubik+Moonrocks&family=Satisfy&family=Shrikhand&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Caprasimo', cursive; */
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Lobster', cursive; */
+    /* font-family: 'Rubik Moonrocks', cursive; */
+    font-family: 'Satisfy', cursive;
+    /* font-family: 'Shrikhand', cursive; */
+    font-size: 20px;
+    background-color: #ffffff;
+
+}
+
+.container {
+    max-width: 950px;
+    margin: 30px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    background:  rgb(240, 255, 247);
+
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-family: 'Rubik Moonrocks', cursive;
+
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.adder {
+    display: flex;
+    width: 990px;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+input[type="date"] {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="time"] {
+    width: 70px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #00cd00;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #008f00;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Styles for Task List */
+.task {
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.task:last-child {
+    border-bottom: none;
+}
+
+.task>li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task>li>span:first-child {
+    flex-grow: 1;
+    max-width: 550px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.task span {
+    margin-right: 10px;
+}
+
+/* Styles for Remove Icon */
+.task img {
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Hover Effect for Remove Icon */
+.task img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Styles for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+        max-width: 100%;
+        /* Adjust the container width for mobile */
+    }
+
+    /* Reduce font size for better fit on smaller screens */
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="time"],
+    button {
+        font-size: 14px;
+        width: 100%;
+        /* Adjust input and button width to fit the container */
+        padding: 8px;
+        margin-bottom: 10px;
+        /* Add spacing between elements */
+    }
+
+    /* Adjust remove icon size for smaller screens */
+    .task img {
+        width: 30px;
+    }
+
+    /* Adjust hover effect for smaller screens */
+    .task img:hover {
+        transform: scale(1.1);
+    }
+}
