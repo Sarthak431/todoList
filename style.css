@@ -1,20 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Berkshire+Swash&family=Caprasimo&family=Lato&family=Lobster&family=Rubik+Moonrocks&family=Satisfy&family=Shrikhand&display=swap');
 
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
-    /* font-family: 'Caprasimo', cursive; */
-    /* font-family: 'Lato', sans-serif; */
-    /* font-family: 'Lobster', cursive; */
-    /* font-family: 'Rubik Moonrocks', cursive; */
     font-family: 'Satisfy', cursive;
-    /* font-family: 'Shrikhand', cursive; */
     font-size: 20px;
     background-color: #ffffff;
-
 }
 
 .container {
@@ -24,7 +17,6 @@ body {
     border-radius: 8px;
     padding: 20px;
     background:  rgb(240, 255, 247);
-
 }
 
 h1 {
@@ -33,7 +25,6 @@ h1 {
     margin-bottom: 30px;
     font-size: 50px;
     font-family: 'Rubik Moonrocks', cursive;
-
 }
 
 label {
@@ -89,7 +80,6 @@ ul {
     padding: 0;
 }
 
-/* Styles for Task List */
 .task {
     padding: 15px 0;
     border-bottom: 1px solid #ccc;
@@ -118,27 +108,22 @@ ul {
     margin-right: 10px;
 }
 
-/* Styles for Remove Icon */
 .task img {
     width: 40px;
     cursor: pointer;
     transition: transform 0.2s ease;
 }
 
-/* Hover Effect for Remove Icon */
 .task img:hover {
     transform: scale(1.2);
 }
 
-/* Responsive Styles for Mobile Devices */
 @media screen and (max-width: 768px) {
     .container {
         padding: 10px;
         max-width: 100%;
-        /* Adjust the container width for mobile */
     }
 
-    /* Reduce font size for better fit on smaller screens */
     h1 {
         font-size: 24px;
     }
@@ -149,18 +134,14 @@ ul {
     button {
         font-size: 14px;
         width: 100%;
-        /* Adjust input and button width to fit the container */
         padding: 8px;
         margin-bottom: 10px;
-        /* Add spacing between elements */
     }
 
-    /* Adjust remove icon size for smaller screens */
     .task img {
         width: 30px;
     }
 
-    /* Adjust hover effect for smaller screens */
     .task img:hover {
         transform: scale(1.1);
     }
